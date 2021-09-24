@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-image: url(./img/empty-blackboard.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header h1 {
+  font-family: 'Nanum Brush Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 6rem;
+  color: #e5ff00;
+  text-shadow: 1px 1px 8px black;
+}
+
+header p {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.377);
+  margin-top: -10px;
+}
+
+.main {
+  height: 85vh;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .left {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .left #keyboard {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0px;
+}
+
+.main .left #keyboard .buttonLetters {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.main .left #keyboard .buttonLetters:hover {
+  background-color: #e5ff00;
+}
+
+.main .left #keyboard .buttonLetters:disabled {
+  background-color: transparent;
+  color: transparent;
+  cursor: not-allowed;
+}
+
+.main .left #keyboard .gameOver {
+  font-size: 3rem;
+  color: #a34040;
+}
+
+.main .left #keyboard .win {
+  font-size: 3rem;
+  color: #27af9d;
+}
+
+.main .left #output {
+  color: white;
+  font-size: 2rem;
+  margin: 50px;
+  text-align: center;
+}
+
+.main .left input {
+  background-color: rgba(245, 245, 245, 0.137);
+  color: whitesmoke;
+  border-style: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 50%;
+  height: 3rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 25px;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.main .left button {
+  border-style: none;
+  width: 50%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-top: 10px;
+  color: black;
+  background: rgba(255, 255, 255, 0.603);
+  mix-blend-mode: screen;
+}
+
+.main .left button:hover {
+  background-color: #e5ff00;
+}
+
+.main .left button:disabled {
+  background-color: transparent;
+  color: transparent;
+}
+
+.main .right {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .right .chances {
+  color: black;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.199);
+  padding: 20px;
+  margin-left: -90px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.main .right #hangmanPic {
+  width: 50%;
+  margin-top: -70px;
+}
+/*# sourceMappingURL=style.css.map */
